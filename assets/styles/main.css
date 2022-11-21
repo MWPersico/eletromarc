@@ -1,0 +1,101 @@
+/* === CSS imports === */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import './services.css';
+@import './contact.css';
+@import './central.css';
+@import './header.css';
+@import './presentation.css';
+@import './request.css';
+
+/* === Variables === */
+:root{
+    --color1: rgb(253, 247, 51);
+    --color2: rgb(15%, 24%, 34%);
+    --color3: rgb(75%, 88%, 90%);
+}
+/* === CSS reset === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size:10px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:#fff70038;
+}
+
+/* === Scrollbar CSS === */
+/* Firefox: */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #fffff000 #1a0e6b;
+}
+/* Chrome, Edge, e Safari: */
+*::-webkit-scrollbar {
+    width: 5px;
+}
+*::-webkit-scrollbar-track {
+    background: #fffff000;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #140e6b;
+}
+
+/* === Classes === */
+.text{
+    font-family:'Roboto', sans-serif;
+}
+.title{
+    font-family:'Roboto', sans-serif;
+}
+.color1{
+    background-color:var(--color1);
+    color:var(--color2);
+}
+.color2{
+    background-color:var(--color2);
+    color:white;
+}
+.color3{
+    background-color:var(--color3);
+}
+
+/* Ids */
+
+
+/* === Fonts === */
+.thin{
+    font-weight:100;
+}
+.light{
+    font-weight:100;
+}
+.regular{
+    font-weight:400;
+}
+.bold{
+    font-weight:700;
+}
+/* === Tags === */
+article, header, footer, main{
+    width:100%;
+    overflow:hidden;
+}
+a{
+    text-decoration:none;
+}
+image{
+    max-width:100%;
+}
+button{
+    border:none;
+    padding:2px;
+}
+button:hover{
+    cursor:pointer;
+}
+ul{
+    list-style-type:none;
+}
