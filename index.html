@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./assets/styles/main.css" rel="stylesheet" />
+    <link href="./assets/javascripts/main.js" rel="script" />
+    <link href="./assets/form.php/itens.php" rel="script" />
     <title>Eletromarc</title>
 </head>
 <body>
@@ -97,14 +99,12 @@
                 <input class="input-text" type="text" name="telephone" id="telephone-input" placeholder="Telefone/Whatsapp">
                 <input class="input-text" type="text" name="email" id="email-input" placeholder="E-mail">
                 <input class="input-text" type="text" name="address" id="address-input" placeholder="Endereço">
-                <p>Tipo de serviço</p>
+                <p><b>Tipos de serviço</b></p>
                 <input class="checkbox" type="checkbox" name="service-type" value="type1"><label>Elétrica residencial</label>
                 <input class="checkbox" type="checkbox" name="service-type" value="type2"><label>Elétrica comercial</label>
                 <input class="checkbox" type="checkbox" name="service-type" value="type3"><label>Elétrica predial</label>
                 <input class="checkbox" type="checkbox" name="service-type" value="type4"><label>Elétrica industrial</label>
-                <span class="devs">
-                    <textarea name="message" id="message" cols="20" rows="5" placeholder="Digite a sua mensagem aqui..."></textarea>
-                </span class>
+                <input name="message" id="message" cols="20" rows="5" placeholder="Digite a sua mensagem aqui..."></input>
                 <button class="button submit-button" type="submit">Enviar</button>
             </form>
         </article>

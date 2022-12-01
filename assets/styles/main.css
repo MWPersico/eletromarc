@@ -9,8 +9,8 @@
 
 /* === Variables === */
 :root{
-    --color1: rgb(252, 244, 25);
-    --color2: rgb(62, 96, 134);
+    --color1: rgb(255, 247, 0);
+    --color2: rgb(48, 112, 184);
     --color3: rgb(183, 230, 238);
 }
 /* === CSS reset === */
@@ -25,7 +25,7 @@ body{
     height: 100vh;
     align-items: center;
     text-align: center;
-    background-color:#def5134b;
+    background-color:rgb(235, 235, 76);
 }
 
 /* === Scrollbar CSS === */
@@ -55,18 +55,20 @@ body{
 .color1{
     background-color:var(--color1);
     color:var(--color2);
+    border-radius: 5px;
 }
 .color2{
     background-color:var(--color2);
     color:white;
-
+    border-radius: 5px;
 }
 .color3{
     background-color:var(--color3);
+    border-radius: 5px;
 }
 
 /* Ids */
-
+.acction
 
 /* === Fonts === */
 .thin{
