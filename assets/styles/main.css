@@ -9,21 +9,23 @@
 
 /* === Variables === */
 :root{
-    --color1: rgb(253, 247, 51);
-    --color2: rgb(15%, 24%, 34%);
-    --color3: rgb(75%, 88%, 90%);
+    --color1: rgb(252, 244, 25);
+    --color2: rgb(62, 96, 134);
+    --color3: rgb(183, 230, 238);
 }
 /* === CSS reset === */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size:10px;
+    font-size:19px;
 }
 body{
     width: 100vw;
     height: 100vh;
-    background-color:#fff70038;
+    align-items: center;
+    text-align: center;
+    background-color:#def5134b;
 }
 
 /* === Scrollbar CSS === */
@@ -57,6 +59,7 @@ body{
 .color2{
     background-color:var(--color2);
     color:white;
+
 }
 .color3{
     background-color:var(--color3);
@@ -78,6 +81,24 @@ body{
 .bold{
     font-weight:700;
 }
+/* === formatação === */
+
+.list-item{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.devs{
+        color: transparent;
+        background: black;
+        border: 1px solid #ccc;
+        padding: 10px;
+        z-index: 5;
+        height: 250px;
+        width: 250px;
+        font-family: 'Verdana';
+        font-size: 0.875em;
+}
 /* === Tags === */
 article, header, footer, main{
     width:100%;
@@ -86,16 +107,53 @@ article, header, footer, main{
 a{
     text-decoration:none;
 }
-image{
+img{
     max-width:100%;
 }
 button{
     border:none;
-    padding:2px;
+    padding:8px;
 }
 button:hover{
     cursor:pointer;
 }
 ul{
     list-style-type:none;
+}
+
+
+
+
+
+/* === Medias === */
+@media all and (min-width: 900px){
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+
+    .service-image{
+        max-width: 70%;
+        border-image: none;
+        border-radius: 2%;
+        width: 70%;
+        height: 70%;
+    }
+
+    .service{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #services-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }

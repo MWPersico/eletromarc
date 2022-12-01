@@ -1,3 +1,22 @@
 .service-image{
-    max-width:70%;
+    max-width: 70%;
+    border-image: none;
+    border-radius: 2%;
+    width: 80%;
+    height: 80%;
 }
+
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#services-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
