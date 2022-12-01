@@ -74,12 +74,69 @@
     box-shadow: var(--w) 0 0 var(--w) var(--fill);
 }
 
-#feedback-form{
-    display:flex;
-    flex-direction:column;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#feedback-form {
+    width: 95%;
+}
+
+#feedback-fieldset {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color:var(--color2);
+}
+
+#feedback-fieldset legend{
+    color:white;
+    width:100%;
+    border-radius:5px;
+    background-color:var(--color2);
+}
+
+#question1, #question1:focus {
+    all:unset;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    font-size:0.2em;
+}
+
+#question1:focus {
+    border-bottom: 2px solid var(--color1);
+}
+
+#question1:hover{
+    cursor:auto;
+}
+
+#feedback-button{
+    background-color:var(--color1);
+    color:white;
+    text-shadow:1px 1px black;
+    border-radius:5px;
+}
+
+.text-label, .radio-label, .textarea-label{
+    display: flex;
+    flex-direction: column;
+    font-size:6rem;
+    margin:10px 0;
 }
 
 .radio-label{
-    display:flex;
-    flex-direction:column;
+    align-items:flex-start;
 }
+
+.question-title {
+    align-self: flex-start;
+    font-size:1rem;
+}
+
