@@ -1,6 +1,7 @@
 <!-- https://contatoeletromarc.wixsite.com/meusite-2 -->
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="./assets/styles/main.css">
     <title>Eletromarc - Feedback</title>
 </head>
+
 <body>
     <!-- Cabeçalho -->
     <header id="header-container">
@@ -29,8 +31,26 @@
     </header>
     <!-- Conteúdo principal -->
     <main>
+        <h1 id="feedback-title">Precisamos do seu feedback!</h1>
         <form action="" id="feedback-form">
-            
+            <label class="text-label"><strong>1</strong>
+                <input type="text" name="question1" id="question1">
+            </label>
+            <label class="radio-label"><strong>2</strong>
+                <label>Sim<input class="question_input" type="radio" name="question2" id="question2"></label>
+                <label>Não<input class="question_input" type="radio" name="question2" id="question2"></label>
+                <label>Parcialmente<input class="question_input" type="radio" name="question2" id="question2"></label>
+            </label>
+            <label class="textarea-label"><strong>3</strong>
+                <textarea class="question-textarea" name="question1" id="question1" cols="20" rows="4"></textarea>
+            </label>
+            <label class="textarea-label"><strong>4</strong>
+                <textarea class="question-textarea" name="question1" id="question1" cols="20" rows="4" ></textarea>
+            </label>
+            <label class="range-label"><strong>Nos avalie!!</strong>
+                <input class="question_range rating stars-rating" max="5" step="1" type="range" value="3">
+            </label>
+            <button class="button" id="feedback-button" type="submit">Enviar feedback</button>
         </form>
     </main>
     <!-- Rodapé -->
@@ -39,6 +59,7 @@
         <span>Desenvolvido por: Marcos Pérsico e Vinícius Fortunato</span>
     </footer>
     <!-- Link para usar icones -->
-    <script src="https://kit.fontawesome.com/6392333b02.js" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/6392333b02.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
