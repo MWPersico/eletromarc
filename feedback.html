@@ -1,14 +1,16 @@
 <!-- https://contatoeletromarc.wixsite.com/meusite-2 -->
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./assets/styles/feedback.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/styles/feedback.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
     <title>Eletromarc - Feedback</title>
 </head>
+
 <body>
     <!-- Cabeçalho -->
     <header id="header-container">
@@ -20,7 +22,7 @@
         </div>
         <nav id="header-menu">
             <ul class="list">
-                <li class="list-item"><a class="header-link" href="./#request">Início</a></li>
+                <li class="list-item"><a class="header-link" href="./">Início</a></li>
                 <li class="list-item"><a class="header-link" href="./services.html">Nossos Serviços</a></li>
                 <li class="list-item"><a class="header-link" href="./eletromarc.html">Quem Somos</a></li>
                 <li class="list-item"><a class="header-link" href="./#request">Solicitar Orçamento</a></li>
@@ -30,7 +32,33 @@
     <!-- Conteúdo principal -->
     <main>
         <form action="" id="feedback-form">
-            
+            <fieldset id="feedback-fieldset">
+                <legend>Formulário de feedback</legend>
+                <label class="text-label">
+                    <strong class="question-title">O que mais te chamou atenção positivamente no nosso stand?</strong>
+                    <input type="text" name="question1" id="question1" placeholder="Sua resposta">
+                </label>
+                <label class="radio-label">
+                    <strong class="question-title">Você conseguiu entender a ideia principal do projeto?</strong>
+                    <label class="question-label">Sim<input class="question_input" type="radio" name="question2" id="question2"></label>
+                    <label class="question-label">Não<input class="question_input" type="radio" name="question2" id="question2"></label>
+                    <label class="question-label">Parcialmente<input class="question_input" type="radio" name="question2" id="question2"></label>
+                </label>
+                <label class="textarea-label">
+                    <strong class="question-title">Se pudesse nos dar uma sugestão de melhoria, qual seria?</strong>
+                    <textarea class="question-textarea" name="question1" id="question3" cols="20" rows="4"></textarea>
+                </label>
+                <label class="textarea-label">
+                    <strong class="question-title">Se pudesse, você patrocinaria o nosso projeto? Por quê?</strong>
+                    <textarea class="question-textarea" name="question1" id="question4" cols="20" rows="4"></textarea>
+                </label>
+                <label class="range-label">
+                    <strong class="question-title">Nos avalie!!</strong>
+                    <input class="question_range rating stars-rating" id="question5" max="5" step="1" type="range"
+                        value="3">
+                </label>
+                <button class="button" id="feedback-button" type="submit">Enviar feedback</button>
+            </fieldset>
         </form>
     </main>
     <!-- Rodapé -->
@@ -38,7 +66,8 @@
 
         <span>Desenvolvido por: Marcos Pérsico e Vinícius Fortunato</span>
     </footer>
-    <!-- Link para usar icones -->
-    <script src="https://kit.fontawesome.com/6392333b02.js" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/6392333b02.js" crossorigin="anonymous"></script>
+    <script src="./assets/javascripts/feedback.js"></script>
 </body>
+
 </html>

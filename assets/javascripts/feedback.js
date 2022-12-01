@@ -1,0 +1,1 @@
+document.querySelector('#question1').focus()
