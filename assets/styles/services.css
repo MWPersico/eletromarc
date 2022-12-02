@@ -35,3 +35,15 @@ h2{
 p{
  font-size: 17px;
 }
+
+#request{
+ border-bottom: 5px;
+ border-radius: 5px;
+ font-size: 22px;
+}
+
+.tipe_service{
+    height: 12px;
+    width: 12px;
+}
+
