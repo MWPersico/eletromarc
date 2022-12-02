@@ -27,22 +27,21 @@ button{
     background-color: rgb(76, 86, 238);
 }
 
+h1{
+    font-size: 28px;
+}
+
 h2{
-    font-size: 22px;
+    font-size: 20px;
 }
 
 p{
  font-size: 17px;
+ text-align: start;
 }
 
-#request{
- border-bottom: 5px;
- border-radius: 5px;
- font-size: 22px;
-}
 
-.tipe_service{
-    height: 12px;
-    width: 12px;
-}
 
+#dados{
+    font-size: 11px;
+}
