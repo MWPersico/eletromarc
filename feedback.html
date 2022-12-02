@@ -6,7 +6,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/styles/feedback.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
     <title>Eletromarc - Feedback</title>
 </head>
@@ -14,20 +13,25 @@
 <body>
     <!-- Cabeçalho -->
     <header id="header-container">
-        <div id="header-top">
-
+        <div class="header-description regular">
+            Serviços de eletricista profissional em Francisco Morato e Região
         </div>
-        <div id="header-logo-container">
+        <div id="header-top">
             <img class="image header-logo" src="./assets/images/logo2.png" alt="logo da empresa" width="300px" />
+            <button class="hamburguer">
+                <i class="fa fa-bars open-menu menu-btn" aria-hidden="true"></i>
+                <i class="fa fa-times close-menu menu-btn hidden" aria-hidden="true"></i>
+            </button>
         </div>
         <nav id="header-menu">
-            <ul class="list">
-                <li class="list-item"><a class="header-link" href="./">Início</a></li>
-                <li class="list-item"><a class="header-link" href="./services.html">Nossos Serviços</a></li>
-                <li class="list-item"><a class="header-link" href="./eletromarc.html">Quem Somos</a></li>
-                <li class="list-item"><a class="header-link" href="./#request">Solicitar Orçamento</a></li>
+            <ul class="menu">
+                <li class="menu-item"><a class="header-link bold" href="./">Início</a></li>
+                <li class="menu-item"><a class="header-link bold" href="./services.html">Nossos Serviços</a></li>
+                <li class="menu-item"><a class="header-link bold" href="./eletromarc.html">Quem Somos</a></li>
+                <li class="menu-item"><a class="header-link bold" href="./#request">Solicitar Orçamento</a></li>
             </ul>
         </nav>
+
     </header>
     <!-- Conteúdo principal -->
     <main>
@@ -40,9 +44,12 @@
                 </label>
                 <label class="radio-label">
                     <strong class="question-title">Você conseguiu entender a ideia principal do projeto?</strong>
-                    <label class="question-label">Sim<input class="question_input" type="radio" name="question2" id="question2"></label>
-                    <label class="question-label">Não<input class="question_input" type="radio" name="question2" id="question2"></label>
-                    <label class="question-label">Parcialmente<input class="question_input" type="radio" name="question2" id="question2"></label>
+                    <label class="question-label">Sim<input class="question_input" type="radio" name="question2"
+                            id="question2"></label>
+                    <label class="question-label">Não<input class="question_input" type="radio" name="question2"
+                            id="question2"></label>
+                    <label class="question-label">Parcialmente<input class="question_input" type="radio"
+                            name="question2" id="question2"></label>
                 </label>
                 <label class="textarea-label">
                     <strong class="question-title">Se pudesse nos dar uma sugestão de melhoria, qual seria?</strong>
