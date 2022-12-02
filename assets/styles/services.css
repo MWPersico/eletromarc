@@ -41,7 +41,26 @@ p{
 }
 
 
-
 #dados{
     font-size: 11px;
+}
+
+#title_persona, #subtitle_persona{
+    font-size: 28px;
+}
+
+#name-input, #telephone-input, #email-input, #address-input{
+    font-size: 17px;
+}
+
+#botton_persona{
+    font-size: 20px;
+}
+
+#message{
+    font-size: 17px;
+}
+
+#residencial, #comercial, #predial, #industrial{
+    font-size: 17px;
 }
