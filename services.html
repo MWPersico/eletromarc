@@ -267,24 +267,27 @@
         </article>
         <article id="request">
             <h2 class="request-title">Solicite um orçamento</h2>
-            <form id="" action="">
-                <input class="input-text" type="text" name="name" id="name-input" placeholder="Nome">
-                <input class="input-text" type="text" name="telephone" id="telephone-input"
-                    placeholder="Telefone/Whatsapp">
-                <input class="input-text" type="text" name="email" id="email-input" placeholder="E-mail">
-                <input class="input-text" type="text" name="address" id="address-input" placeholder="Endereço">
-                <p>Tipo de serviço</p>
-                <input class="checkbox" type="checkbox" name="service-type" value="type1"><label>Elétrica
-                    residencial</label>
-                <input class="checkbox" type="checkbox" name="service-type" value="type2"><label>Elétrica
-                    comercial</label>
-                <input class="checkbox" type="checkbox" name="service-type" value="type3"><label>Elétrica
-                    predial</label>
-                <input class="checkbox" type="checkbox" name="service-type" value="type4"><label>Elétrica
-                    industrial</label>
+            <form id="request-form" method="post" action="./backend/database/request.php">
+                <input class="text-input" type="text" name="name" id="name-input" placeholder="Nome" required>
+                <input class="text-input" type="tel" name="telephone" id="telephone-input"
+                    placeholder="Telefone/Whatsapp" required>
+                <input class="text-input" type="email" name="email" id="email-input" placeholder="E-mail" required>
+                <input class="text-input" type="text" name="address" id="address-input" placeholder="Endereço" required>
+                <p class="types-title bold">Tipos de serviço</p>
+                <div class="service-types">
+                    <label class="checkbox-label"><input class="checkbox" type="checkbox" value="1">Elétrica
+                        residencial</label>
+                    <label class="checkbox-label"><input class="checkbox" type="checkbox" value="2">Elétrica
+                        comercial</label>
+                    <label class="checkbox-label"><input class="checkbox" type="checkbox" value="3">Elétrica
+                        predial</label>
+                    <label class="checkbox-label"><input class="checkbox" type="checkbox" value="4">Elétrica
+                        industrial</label>
+                    <input type="hidden" id="hidden-service-type" name="service-types">
+                </div>
                 <textarea name="message" id="message" cols="20" rows="5"
-                    placeholder="Digite a sua mensagem aqui..."></textarea>
-                <br><button class="button submit-button" type="submit">Enviar</button></br>
+                    placeholder="Qual é a sua necessidade??" required></textarea>
+                <button class="button submit-button" type="submit">Solicitar</button>
             </form>
         </article>
         <span>Desenvolvido por: Marcos Pérsico e Vinícius Fortunato</span>
