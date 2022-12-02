@@ -1,17 +1,21 @@
-document.querySelector('#question1').focus()
+document.querySelector('#name').focus();
 
-var menu = document.querySelector('#header-menu');
-var burguer = document.querySelector('.hamburguer');
-var menuBtn = document.getElementsByClassName('menu-btn');
+let form = document.querySelector('#feedback-form');
+let inputs = [
+    document.querySelector('#name'),
+    document.querySelector('#question1'),
+    document.querySelector('#question2'),
+    document.querySelector('#question3'),
+    document.querySelector('#question4'),
+    document.querySelector('#question5'),
+]
 
-burguer.addEventListener("click", e=>{ 
-    if(menuBtn[1].classList.contains('hidden')){
-        menu.style.transform = "translateY(100%)";
-        document.querySelector('.range-label').style.display ="none"
-    }else if(menuBtn[0].classList.contains('hidden')){
-        menu.style.transform = "translateY(-100%)";
-        document.querySelector('.range-label').style.display ="block"
+form.addEventListener('submit', e=>{
+    e.preventDefault();
+    if(inputs[0].value.length < 4){
+        if(window.confirm('Você prefere não declarar seu nome?')){
+            form.submit();
+        }
     }
-    menuBtn[0].classList.toggle('hidden');
-    menuBtn[1].classList.toggle('hidden');
+    form.submit();
 })

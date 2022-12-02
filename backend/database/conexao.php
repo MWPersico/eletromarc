@@ -4,13 +4,14 @@
         private $user;
         private $pass;
         private $db;
-        private static $conn;
+        public $conn;
 
         public function __construct(){
             $this->host = "localhost";
             $this->user = "root";
             $this->pass = "24022005Marc";
-            $this->db = "eletromarc";
+            $this->db = "eletromarc_beta";
+            $this->mysqlConn();
         }
 
         public function mysqlConn(){
