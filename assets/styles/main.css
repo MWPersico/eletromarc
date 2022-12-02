@@ -21,12 +21,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-<<<<<<< HEAD
-    font-size:19px;
-=======
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
->>>>>>> 8656efaaba72cedc8f16e1e1ac7c3630d8e4d8a4
 }
 
 body {
@@ -92,7 +88,7 @@ body {
 }
 
 /* Ids */
-.acction
+
 
 /* === Fonts === */
 .thin {
