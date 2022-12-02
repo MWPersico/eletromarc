@@ -21,10 +21,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
+    font-size: 17px;
+=======
     font-size: 10px;
+>>>>>>> 8ad7c109489318ade8968dd4dd8c6c45873131a2
     font-family: 'Roboto', sans-serif;
 }
-
 body {
     width: 100vw;
     height: 100vh;
