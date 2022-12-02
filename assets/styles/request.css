@@ -1,0 +1,87 @@
+#request{
+    background-color: rgb(242, 242, 242);
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#request-form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+}
+
+.text-input,
+.text-input:focus{
+    width:80%;
+    all: unset;
+    width: 80%;
+    margin-top:8px;
+    border: none;
+    border-bottom: 2px solid gray;
+    background-color: transparent;
+    font-size: 2.2em;
+    text-align:left;
+}
+.text-input:focus{
+    border-bottom: 2px solid var(--color1);
+}
+
+.request-title{
+    margin-top:10px;
+    font-size:2.5rem;
+}
+
+.types-title{
+    margin:10px 0;
+    font-size:2.5rem;
+}
+
+.service-types{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    width:80%;
+}
+
+.checkbox-label{
+    font-size:2.5rem;
+    margin-bottom:5px;
+}
+
+.checkbox{
+    width:25px;
+    height:25px;
+}
+#message{
+    width:10%;
+    all:unset;
+    margin-top:20px;
+    font-size:2.2rem;
+    resize:none;
+    border:none;
+    background:none;
+    text-align:left;
+    border-bottom: 2px solid gray;
+}
+#message:focus{
+    font-size:2.3rem;
+    border-bottom:2px solid var(--color1);
+}
+
+.submit-button {
+    width:50%;
+    margin:20px auto;
+    background-color: var(--color2);
+    padding:5px;
+    color: white;
+    font-size:4rem;
+    box-shadow: 5px 5px 5px black;
+    text-shadow:1px 1px 1px white;
+    border-radius: 10px;
+}
+.submit-button:hover {
+    transform:scale(105%);
+}
