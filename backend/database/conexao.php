@@ -7,10 +7,7 @@
         public $conn;
 
         public function __construct(){
-            $this->host = "marcprojects.com";
-            $this->user = "u226543733_eletromarc";
-            $this->pass = "24022005Marc";
-            $this->db = "u226543733_eletromarcBeta";
+            /*Informações de conexão ocultas*/
             $this->mysqlConn();
         }
 
